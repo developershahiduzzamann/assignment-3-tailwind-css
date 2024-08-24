@@ -17,6 +17,9 @@
         tailwind.config = {
           theme: {
             extend: {
+              backgroundImage: {
+                heroImg: "url('/assets/images/bg.jpg')",
+              },
               colors: {
                 clifford: '#da373d',
                 primary: 'rgb(171, 239, 95)',
@@ -248,7 +251,44 @@
             </div>
           </div>
      </section>
+     <!-- Lets Discuss Next Project -->
+      <section >
+        <div class="bg-heroImg h-[500px] bg-no-repeat bg-center ">
+        </div>
+      </section>
   </main>
-  <footer></footer>
+  <!-- footer Section start -->
+  <footer class="bg-black">
+    <div class="container mx-auto">
+      <div class="py-20">
+        <div class="flex justify-center items-center mx-auto">
+          <div class="h-7 w-7 rounded-full -rotate-45 bg-primary flex items-center">
+            <i class="fa-solid fa-arrow-right-long items-center mx-auto"></i>
+          </div>
+          <a class="text-3xl font-bold ml-2 text-white">Rinterio</a>
+        </div>
+        <div class="mt-8">
+          <p class="text-base font-bold text-gray-100 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, <span class="block">featuring weathered wood, sleek metal accents.</span></p>
+        </div>
+        <div class="mt-8">
+          <div class="flex flex-col items-center mx-auto md:flex-row justify-between">
+            <div class="text-gray-200 text-base"><a href="#">Home</a></div>
+            <div class="text-gray-200 text-base mt-5 md:mt-0"><a href="#">Services</a></div>
+            <div class="text-gray-200 text-base mt-5 md:mt-0"><a href="#">Portfolio</a></div>
+            <div class="text-gray-200 text-base mt-5 md:mt-0"> <a href="#">Blogs</a></div>
+            <div class="text-gray-200 text-base mt-5 md:mt-0"> <a href="#">Contact Us</a></div>
+          </div>
+        </div>
+        <div class="mt-8">
+          <div class="flex items-center bg-primary py-3 px-3 rounded-full mx-auto justify-center w-52">
+            <button class="text-lg font-bold ">Book Consult</button>
+            <div class="ml-2 h-6 w-6 rounded-full -rotate-45 bg-black flex items-center">
+              <i class="fa-solid fa-arrow-right-long  mx-auto text-white"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <hr class="border-2">
 </body>
 </html>
