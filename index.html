@@ -10,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font family inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!-- Tailwind and Daisy ui cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -27,9 +31,12 @@
                 background: '#F4F4F4',
                 one:'#F5F5F5',
                 two:'#FEFEFE',
+                Pcolor:'#494949',
+                pcolorTwo: '#737373',
               },
               fontFamily:{
                 manrope: ['Manrope', 'sans-serif'],
+                inter: ['Inter', 'sans-serif'],
               },
             },
           },
@@ -38,12 +45,15 @@
 
 </head>
 <body class="font-manrope">
+  <!-- header section start -->
   <header class="bg-gradient-to-b from-one to-two">
     <div class="pt-2 container mx-auto px-3 pb-14">
       <!-- nav section start -->
       <div class="navbar">
         <div class="navbar-start lg:w-1/4 lg:flex items-center">
-          <div class="h-7 w-7 rounded-full -rotate-45 bg-primary flex items-center"><i class="fa-solid fa-arrow-right-long items-center mx-auto"></i></div>
+          <div class="h-7 w-7 rounded-full -rotate-45 bg-primary flex items-center">
+            <i class="fa-solid fa-arrow-right-long items-center mx-auto"></i>
+          </div>
           <a class="text-3xl font-bold ml-2">Rinterio</a>
         </div>
         <div class="navbar-center hidden lg:flex ">
@@ -56,12 +66,12 @@
           </ul>
         </div>
         <div class="navbar-end ">
-          <div class="flex items-center h-11 w-11 border-gray-500 rounded-full bg-white mr-9 invisible md:visible md:mr-3">
+          <div class="flex items-center h-11 w-11 border-2 border-gray-200 rounded-full bg-white mr-9 invisible md:visible md:mr-3">
             <i class="fa-solid fa-magnifying-glass items-center mx-auto text-[#737373]"></i>
           </div>
-          <div class="flex items-center h-11 w-11 border-gray-500 rounded-full bg-white mr-9 invisible md:visible md:mr-3"><i class="fa-solid fa-cart-shopping items-center mx-auto text-[#737373]"></i></div>
-          <div class="flex items-center bg-primary py-3 px-3 rounded-full invisible md:visible md:mr-3">
-            <button class="text-lg font-bold">Book Consult</button>
+          <div class="flex items-center h-11 w-11 border-2 border-gray-200 rounded-full bg-white mr-9 invisible md:visible md:mr-3"><i class="fa-solid fa-cart-shopping items-center mx-auto text-[#737373]"></i></div>
+          <div class="flex items-center bg-primary py-3 px-3 rounded-full invisible md:visible ">
+            <button class="text-lg font-bold font-inter">Book Consult</button>
             <div class="ml-2 h-6 w-6 rounded-full -rotate-45 bg-black flex items-center"><i class="fa-solid fa-arrow-right-long items-center mx-auto text-white"></i>
           </div>
         </div>
@@ -86,14 +96,14 @@
     <div class="container mx-auto">
       <div class="mt-7"><img class="mx-auto" src="./assets/images/banner.png" alt=""></div>
       <div class="mt-7">
-        <h1 class="text-center text-6xl font-extrabold">A barn house of this design has a<span class="md:block">striking appearance</span></h1>
+        <h1 class="text-center font-inter lg:text-6xl text-4xl font-bold">A barn house of this design has a<span class="md:block">striking appearance</span></h1>
       </div>
       <div class="mt-7">
-        <p class="text-center text-base font-bold text-[rgb(73, 73, 73)]">The barn house captivates with its blend of rustic charm and modern<span>sophistication, featuring weathered wood, sleek metal accents, and large</span><span class="md:block">windows that flood the space with natural light.</span></p>
+        <p class="text-center font-inter text-base font-medium text-Pcolor">The barn house captivates with its blend of rustic charm and modern<span>sophistication, featuring weathered wood, sleek metal accents, and large</span><span class="md:block">windows that flood the space with natural light.</span></p>
       </div>
       <div class="flex justify-center mt-8">
-        <div class="flex bg-[#D4F7AE] px-4 py-2 rounded-full">
-          <button class="text-base font-bold font-manrope">View Details</button>
+        <div class="flex bg-[#D4F7AE] px-4 py-2 rounded-full border-2 border-[#ABEF5F]">
+          <button class="text-base font-bold font-inter">View Details</button>
           <div class="h-7 w-7 rounded-full -rotate-45 bg-primary flex items-center ml-2"><i class="fa-solid fa-arrow-right-long items-center mx-auto "></i></div>
         </div>
       </div>
@@ -108,102 +118,101 @@
       <div class="flex flex-col justify-between md:flex-row">
         <div class="mt-5 mx">
           <div class="flex justify-center md:justify-start">
-            <button class="bg-white px-4 py-1 rounded-full"><i class="fa-solid fa-arrow-right-long mr-1"></i>About Us</button>
+            <button class="bg-white px-4 py-1 rounded-full font-innter text-base font-bold"><i class="fa-solid fa-arrow-right-long mr-1"></i>About Us</button>
           </div>
-          <div class="mt-8"><h1 class="text-4xl font-bold text-center md:text-left">We design thoughtful,<span class="block">liveable spaces</span></h1></div>
+          <div class="mt-8"><h1 class="md:text-4xl font-inter font-extrabold text-center md:text-left text-2xl">We design thoughtful,<span class="block">liveable spaces</span></h1></div>
           <div class="mt-8">
-            <p class="text-base font-medium text-center md:text-left">The barn house captivates with its blend of rustic charm and<span class="block">modern sophistication, featuring weathered wood, sleek metal  accents.</span></p>
+            <p class="text-base font-medium text-center font-inter text-Pcolor md:text-left">That sounds like a wonderful approach to design! Focusing on thoughtful<span class="block">and livable spaces can create environments.</span></p>
           </div>
             <div class=" flex items-center flex-col">
-              <div class="flex items-center mt-7 bg-white px-6 py-5 rounded-2xl">
+              <div class="flex md:items-center mt-7 bg-white px-6 py-5 rounded-2xl">
                 <div>
                   <img src="./assets/images/commercial.png" alt="">
                 </div>
                 <div class="ml-5">
-                  <h4 class="text-lg font-bold mb-3">Commercial</h4>
-                  <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                  <h4 class="text-lg font-inter font-extrabold font-Pcolor mb-2">Commercial</h4>
+                  <p class="text-base font-inter font-medium text-pcolorTwo">Designing thoughtful, livable spaces for commercial projects <span class="block">involves balancing functionality, aesthetics</span></p>
                 </div>
               </div>
-              <div class="flex items-center mt-7 bg-white px-6 py-5 rounded-2xl">
+              <div class="flex md:items-center mt-7 bg-white px-6 py-5 rounded-2xl">
                 <div>
                   <img src="./assets/images/residential.png" alt="">
                 </div>
                 <div class="ml-5">
-                  <h4 class="text-lg font-bold mb-3">Residential</h4>
-                  <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                  <h4 class="text-lg font-inter font-extrabold font-Pcolor mb-2">Residential</h4>
+                  <p class="text-base font-medium text-[#737373]">Designing a residential house involves creating a space that a<span class="block">he needs and desires of the homeowners </span></p>
                 </div>
               </div>
             </div>            
         </div>
-        <div class="max-w-lg flex mx-auto md:mx-0">
+        <div class="md:max-w-lg lg:max-w-sm xl:max-w-lg flex mx-auto md:mx-0">
           <img class="mt-7 md:mt-0 " src="./assets/images/Rectangle.png" alt="">
         </div>
       </div>
     </div>
     <!-- Our work process -->
     <div class="container mx-auto">
-      <div class="pt-20 pb-24">
+      <div class="pt-20 pb-20">
         <div class="flex justify-center">
-          <button class="bg-white px-4 py-1 rounded-full text-sm font-bold"><i class="fa-solid fa-arrow-right-long mr-1"></i>How we works</button>
+          <button class="bg-white px-4 py-1 rounded-full text-sm font-inter font-bold text-Pcolor"><i class="fa-solid fa-arrow-right-long mr-1"></i>How we works</button>
         </div>
         <div class="mt-3">
-          <h1 class="text-4xl font-extrabold text-center">Our Works Process</h1>
+          <h1 class="md:text-4xl text-2xl font-extrabold font-inter text-center">Our Works Process</h1>
         </div>
         <div class="mt-5">
-          <p class="text-base text-[rgb(73, 73, 73)] text-center mx-auto w-1/2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <p class="text-base font-inter font-medium text-center font-Pcolor mx-auto">Designing a residential house involves a detailed and thoughtful process to ensure that the final <span class=" md:block">product meets the needs, desires.</span></p>
         </div>
         <div class="mt-8 mx-3">
-          <div class="flex justify-center flex-col items-center gap-5  mx-auto md:flex-row justify-between">
+          <div class="flex justify-center flex-col items-center gap-5  mx-auto md:flex-row md:justify-between">
             <div class="bg-[#E7C1D3] p-4 rounded-2xl w-64">
               <img src="./assets/images/concept.png" alt="">
-              <h3 class="text-lg font-extrabold mt-2">Concept</h3>
-              <p class="text-base font-medium text-[rgb(73, 73, 73)] mt-2 ">The barn house captivates<span class="block">with its blend of rustic charm</span> and modern.</p>
+              <h3 class="text-lg font-inter font-extrabold mt-2">Concept</h3>
+              <p class="text-base font-medium text-Pcolor mt-2 ">The concept phase is one<span class="">most critical stages in the for</span>a residential house. involves synthesizing</p>
             </div>
             <div class="bg-[#EFDA6E] p-4 rounded-2xl w-64">
               <img src="./assets/images/flow-chart.png" alt="">
-              <h3 class="text-lg font-extrabold mt-2">Concept</h3>
-              <p class="text-base font-medium text-[rgb(73, 73, 73)] mt-2 ">The barn house captivates<span class="block">with its blend of rustic charm</span> and modern.</p>
+              <h3 class="text-lg font-inter font-extrabold mt-2">Design Process</h3>
+              <p class="text-base font-medium text-Pcolor mt-2 ">The design process for a<span class="">residential house involves a </span> of structured phases the project.</p>
             </div>
             <div class="bg-[#A4DAC3] p-4 rounded-2xl w-64">
               <img src="./assets/images/vision.png" alt="">
-              <h3 class="text-lg font-extrabold mt-2">Concept</h3>
-              <p class="text-base font-medium text-[rgb(73, 73, 73)] mt-2 ">The barn house captivates<span class="block">with its blend of rustic charm</span> and modern.</p>
+              <h3 class="text-lg font-inter font-extrabold mt-2">Supervision</h3>
+              <p class="text-base font-medium text-Pcolor mt-2 ">TSupervision in the context<span class="">the design and construction</span>a residential house.</p>
             </div>
             <div class="bg-[#77AAEA] p-4 rounded-2xl w-64">
               <img src="./assets/images/budget-planning.png" alt="">
-              <h3 class="text-lg font-extrabold mt-2">Concept</h3>
-              <p class="text-base font-medium text-[rgb(73, 73, 73)] mt-2 ">The barn house captivates<span class="block">with its blend of rustic charm</span> and modern.</p>
+              <h3 class="text-lg font-inter font-extrabold mt-2">Budget Planning</h3>
+              <p class="text-base font-medium text-Pcolor mt-2 ">Budget planning is a crucial<span class=""> the aspect of any residential</span> house project ensuring the project.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Our last Portfolio -->
-     <section class="bg-white">
-        <div class="container mx-auto py-20">
+     <section class="md:bg-white">
+        <div class="container mx-auto md:py-20">
           <div class="">
             <div class="flex justify-center">
-              <button class="bg-[#EEFCDF] px-4 py-1 rounded-full text-sm font-bold"><i class="fa-solid fa-arrow-right-long mr-1"></i>Explore our Latest works</button>
+              <button class="bg-[#EEFCDF] px-4 py-1 rounded-full text-sm font-inter font-bold"><i class="fa-solid fa-arrow-right-long mr-1"></i>Explore our Latest works</button>
             </div>
           </div>
           <div class="mt-5">
-            <h1 class="text-4xl font-extrabold text-center">Our Latest Portfolio</h1>
+            <h1 class="md:text-4xl text-2xl font-inter font-bold text-center">Our Latest Portfolio</h1>
           </div>
           <div class="mt-5">
-            <p class="text-base font-medium text-center text-[rgb(73, 73, 73)]">The barn house captivates with its blend of rustic charm and modern sophistication,<span class="md:block">featuring weathered wood, sleek metal accents.</span></p>
+            <p class="text-base font-inter font-medium text-center text-Pcolor">Creating a compelling presentation for your latest portfolio involves showcasing <span class="md:block">your most recent and notable projects .</span></p>
           </div>
-          <!-- section -->
-          <div class="mt-5">
+          <div class="mt-5 mx-3">
             <div class="flex justify-between flex-col gap-5 md:flex-row">
               <div class="flex flex-col md:flex-row border border-gray-200 p-4 rounded-2xl md:h-[225px] w-[380px] md:w-[1125px] mx-auto md:mx-0">
                 <div class="border-dashed border-2 border-gray-200 w-[330px] md:w-[260px] mx-auto md:mx-0">
                   <img class="h-[188px] w-[330px]" src="./assets/images/img1.png" alt="">
                 </div>
                 <div class="ml-3">
-                  <h2 class="text-xl font-extrabold">Commercial</h2>
-                  <p class="mt-4 font-medium text-gray-400">The barn house captivates with its blend of rustic charm <span class="md:block">and modern. The barn house captivates with its blend of</span> rustic charm and modern .</p>
-                  <div class="flex rounded-full mt-5">
-                    <button class="text-lg font-extrabold font-manrope">View Details</button>
+                  <h2 class="text-xl font-inter font-extrabold">Commercial</h2>
+                  <p class="mt-2 font-medium font-inter text-pcolorTwo">The barn house captivates with its blend of rustic charm <span class="md:block">and modern. The barn house captivates with its blend of</span> rustic charm and modern .</p>
+                  <div class="flex rounded-full mt-2">
+                    <button class="text-lg font-inter font-extrabold font-manrope">View Details</button>
                     <div class="h-7 w-7 rounded-full -rotate-45 bg-primary flex items-center ml-2"><i class="fa-solid fa-arrow-right-long items-center mx-auto "></i></div>
                   </div>
                 </div>
@@ -217,8 +226,7 @@
               </div>
             </div>
           </div>
-          <!-- section -->
-          <div class="mt-5">
+          <div class="mt-5 ml-3">
             <div class="flex justify-between flex-col md:flex-row gap-4">
               <div>
                 <div class="border border-gray-200 p-4 rounded-2xl h-[227px] w-[380px] mx-auto md:mx-0 md:w-[290px]">
@@ -232,16 +240,16 @@
                   <img class="h-[188px] w-[330px]" src="./assets/images/img4.png" alt="">
                 </div>
                 <div class="ml-3">
-                  <h2 class="text-xl font-extrabold">Commercial</h2>
-                  <p class="mt-4 font-medium text-gray-400">The barn house captivates with<span class="block">its blend of rustic charmand</span>modern .</p>
-                  <div class="flex rounded-full mt-5">
-                    <button class="text-lg font-extrabold font-manrope">View Details</button>
+                  <h2 class="text-xl font-inter font-extrabold">Commercial</h2>
+                  <p class="mt-2 font-medium text-gray-400">The barn house captivates with<span class="block">its blend of rustic charmand</span>modern .</p>
+                  <div class="flex rounded-full mt-2">
+                    <button class="text-lg font-inter font-extrabold font-manrope">View Details</button>
                     <div class="h-7 w-7 rounded-full -rotate-45 bg-primary flex items-center ml-2"><i class="fa-solid fa-arrow-right-long items-center mx-auto "></i>
                     </div>
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="">
                 <div class="border border-gray-200 p-4 rounded-2xl h-[227px] w-[380px] mx-auto md:mx-0 md:w-[290px]">
                   <div class="border-dashed border-2 border-gray-200 md:w-[256px]">
                    <img class="h-[188px] md:w-[256px] w-[400px]" src="./assets/images/img5.png" alt="">
@@ -254,80 +262,51 @@
      <!-- our product price -->
       <section class="bg-background">
         <div class="container mx-auto py-20">
-            <h1 class="text-center text-4xl font-extrabold">Our Product Price</h1>
-            <div class="my-7">
-              <p class="text-center text-lg font-medium">The barn house captivates with its blend of rustic charm and modern sophistication,
-              <span class="md:block">featuring weathered wood, sleek metal accents.</span></p>
+            <h1 class="text-center text-4xl font-inter font-bold">About Us?</h1>
+            <div class="mt-7">
+              <p class="text-center font-inter text-lg font-medium">At Rinterio, we believe that every space has the potential to inspire, comfort, and delight. <span class="md:block">We are a passionate team of interior designers.</span></p>
             </div>
-          <div class=" flex md:justify-between md:flex-row flex-col items-center gap-5">
-            <div>
-              <div class="card bg-base-100 w-80 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img
-                    src="./assets/images/img2.png"
-                    alt="Shoes"
-                    class="rounded-xl h-[180px]" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Design One</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn bg-[#ABEF5F]">Buy Now</button>
-                  </div>
-                </div>
+          <div class="mx-3">
+            <div class="collapse collapse-arrow bg-white mt-5">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-2xl font-bold">What is Rinterior Design?</div>
+              <div class="collapse-content">
+                <p class="text-base font-bold font-inter text-Pcolor">Interior design is the art and science of enhancing the interior spaces of buildings to achieve a more aesthetically pleasing and functional environment for the people who use them. It involves a wide range of elements, including color schemes, furniture, lighting, layout, textures, and materials, all of which are thoughtfully selected and arranged to create a cohesive and harmonious space.</p>
               </div>
             </div>
-            <div class="card bg-base-100 w-80 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./assets/images/img3.png"
-                  alt="Shoes"
-                  class="rounded-xl" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">Design Two</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions">
-                  <button class="btn bg-[#ABEF5F]">Buy Now</button>
-                </div>
+            <div class="collapse collapse-arrow bg-white mt-5">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-2xl font-bold">How to design an Rinterior Portfolio?</div>
+              <div class="collapse-content">
+                <p class="text-base font-bold font-inter text-Pcolor">Creating an interior design portfolio is essential for showcasing your skills, creativity, and experience to potential clients or employers. A well-designed portfolio not only highlights your best work but also demonstrates your unique style and approach to interior design.</p>
               </div>
             </div>
-            <div class="card bg-base-100 w-80 shadow-xl">
-              <figure class="px-10 pt-10">
-                <img
-                  src="./assets/images/img4.png"
-                  alt="Shoes"
-                  class="rounded-xl" />
-              </figure>
-              <div class="card-body items-center text-center">
-                <h2 class="card-title">Design Three</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions">
-                  <button class="btn bg-[#ABEF5F]">Buy Now</button>
-                </div>
+            <div class="collapse collapse-arrow bg-white mt-5">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-2xl font-bold">Example Tools and Software for Creating Portfolios</div>
+              <div class="collapse-content">
+                <ul class="list-disc ml-7">
+                  <li><span class="text-lg font-bold">Adobe InDesign:</span><span class="font-inter font-medium text-Pcolor">Ideal for creating both digital and print portfolios with professional layout and design features.</span></li>
+                  <li><span class="text-lg font-bold">Canva:</span><span class="font-inter font-medium text-Pcolor">User-friendly and offers customizable templates for creating digital portfolios.</span></li>
+                  <li><span class="text-lg font-bold">SketchUp:</span><span class="font-inter font-medium text-Pcolor">Great for creating 3D models and renderings to include in your portfolio.</span></li>
+                  <li><span class="text-lg font-bold">Figma:</span><span class="font-inter font-medium text-Pcolor">Useful for creating web-based portfolios or interactive elements in your design.</span></li>
+                </ul>
               </div>
             </div>
-            <div>
-              <div class="card bg-base-100 w-80 shadow-xl">
-                <figure class="px-10 pt-10">
-                  <img
-                    src="./assets/images/img5.png"
-                    alt="Shoes"
-                    class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <h2 class="card-title">Design Four</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions">
-                    <button class="btn bg-[#ABEF5F]">Buy Now</button>
-                  </div>
-                </div>
+            <div class="collapse collapse-arrow bg-white mt-5">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-2xl font-bold">Review and Edit</div>
+              <div class="collapse-content">
+                <ul class="list-disc ml-7">
+                  <li><span class="text-lg font-bold">Proofread:</span><span class="font-inter font-medium text-Pcolor">Ensure all text is free of spelling and grammatical errors. Clear, concise, and well-written descriptions make a positive impression.</span></li>
+                  <li><span class="text-lg font-bold">Get Feedback:</span><span class="font-inter font-medium text-Pcolor">Before finalizing your portfolio, seek feedback from peers, mentors, or colleagues. They may provide valuable insights on improving your presentation or catching any mistakes you missed.</span></li>
+                </ul>
               </div>
-            </div>   
+            </div> 
           </div>
         </div>
       </section>
-     <!-- Lets Discuss Next Project -->
+     <!-- About Us Section -->
       <section class="border-4 border-white">
         <div class="bg-heroImg  bg-no-repeat bg-cover ">
           <div class="container mx-auto">
